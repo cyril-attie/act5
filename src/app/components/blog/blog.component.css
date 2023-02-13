@@ -1,0 +1,13 @@
+ul {
+padding:5%;
+display: flex;
+flex-direction:column;
+list-style:none;
+}
+
+form {
+    padding :5%;
+    display:flex;
+flex-direction:column;
+
+}

@@ -1,0 +1,24 @@
+
+<div>
+  <form (submit)="nuevaNoticia($event)">
+
+    <label for="title">Título de la noticia:</label>
+<input type="text" required name="title" [(ngModel)]="nuevaNoticiaTitulo">
+
+<label for="imageUrl">Url de la imagen de la noticia:</label>
+<input name="imageUrl" type="url" required [(ngModel)]="nuevaNoticiaImagen">
+
+<label for="body">Contenido de la noticia:</label>
+<input name="body" type="text" [(ngModel)]="nuevaNoticiaTexto">
+
+<input type="submit" input value="Crear nueva noticia!">
+  </form>
+</div>
+
+<div id="news-div">
+  <ul [innerHTML]="newsListHTML" id="news-div-ul">
+    
+  </ul>
+</div>
+
+
